@@ -19,10 +19,8 @@ body {
 }
 
 main {
-  position: relative;
   max-width: 500px;
   margin: 50px auto;
-  z-index: 2;
 }
 
 h2 {
@@ -31,11 +29,7 @@ h2 {
 
 p, ul {
   margin-bottom: 20px;
-  font-size: 15px;
-}
-
-p:last-child, ul:last-child {
-  margin-bottom: 25px;
+  line-height: 130%;
 }
 
 a {
@@ -48,7 +42,6 @@ a:hover {
   text-decoration: underline;
   color: var(--link-hover-color);
   background-color: var(--link-hover-background);
-  cursor: pointer;
 }
 
 hr {
@@ -64,51 +57,21 @@ li {
   margin-bottom: 10px;
 }
 
-.footer {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  object-fit: fit;
-  margin-top: -15%;
-  z-index: 1;
-}
-
-.header {
-  position: relative;
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  object-fit: fit;
-  z-index: 1;
-  transform: rotate(180deg);
-}
-
 .logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -5%;
+  margin: auto;
   width: 90%;
   margin-top: -10%;
 }
 
-/* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
-
-  p, ul, h4 {
+  p, ul {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 550px) {
-
   main {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
-
-  /* You can add more styles here for smaller screens */
 }
