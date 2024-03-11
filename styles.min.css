@@ -1,0 +1,96 @@
+:root {
+  --text-color: #D9D9D9;
+  --background-color: black;
+  --link-color: #DFB0B0;
+  --link-hover-color: black;
+  --link-hover-background: #DFB0B0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+main {
+  position: relative;
+  max-width: 500px;
+  margin: 50px auto;
+  z-index: 2;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p, ul {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+p:last-child, ul:last-child {
+  margin-bottom: 25px;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover-color);
+  background-color: var(--link-hover-background);
+  cursor: pointer;
+}
+
+hr {
+  border: 0.5px solid #333;
+  margin: 20px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  object-fit: fit;
+  margin-top: -15%;
+  z-index: 1;
+}
+
+.header {
+  position: relative;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  object-fit: fit;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -5%;
+  width: 90%;
+  margin-top: -10%;
+}
