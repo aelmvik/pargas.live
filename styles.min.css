@@ -94,3 +94,21 @@ li {
   width: 90%;
   margin-top: -10%;
 }
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+
+  p, ul, h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* You can add more styles here for smaller screens */
+}
